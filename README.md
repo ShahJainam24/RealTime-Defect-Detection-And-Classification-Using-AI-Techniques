@@ -14,3 +14,69 @@ Additionally, this visual inspection is subjective and dependent on a large numb
 
 The main focus of this project is to utilize the perfect image of an object with proper dimensions and make effective use of this data in the development of successful application using various new technologies.
 
+# Process Model
+
+![image](https://github.com/ShahJainam24/RealTime-Defect-Detection-And-Classification-Using-AI-Techniques/assets/49012105/1e219c73-63ad-4067-ae6f-27231a5de5ae)
+
+# Implementation Details
+
+### 6.1 Data Gathering
+
+#### 6.1.1 Data Gathering for Prototype Model
+
+-   Multiple websites were explored to collect images of various objects like pistons, hot strips, fabrics, metal plates, etc., to build a neural network for defect detection and classification.
+-   The collected images represented different examples for training and testing the model.
+
+#### 6.1.2 Data Creation for Implementing Defect Detection Model
+
+-   A saucer dataset was created specifically for defect detection and classification.
+-   Videos of different saucers were recorded, and these videos were converted into individual image frames.
+-   These image frames were then categorized into three categories: defect1 (minor defects like design or dents), defect2 (broken or chipped saucer), and normal (perfect saucer).
+
+### 6.2 Data Understanding
+
+#### 6.2.1 Data for Prototype Model Building (Pistons Dataset)
+
+-   The dataset contained images of pistons classified into three categories: normal pistons, pistons with Defect Type 1, and pistons with Defect Type 2.
+-   These images were used to build a neural network for object classification.
+
+#### 6.2.2 Data for Building Defect Detection Model (Saucer Dataset)
+
+-   The saucer dataset comprised images of saucers falling into three categories: defect1, defect2, and normal saucers.
+-   The dataset was created by converting video frames of saucers into images for defect detection model building.
+
+### 6.3 Building Neural Network and Implementing Defect Detection
+
+#### 6.3.1 Model Building for Pistons Dataset
+
+-   A Sequential Neural Network was built for the pistons dataset with layers for image classification.
+-   The model was trained and optimized using the Adam optimizer with accuracy metrics.
+
+#### 6.3.2 Data Preparation and Pre-processing on Saucer Data
+
+-   The saucer dataset was prepared by capturing videos of saucers and converting them into image frames.
+-   These images were divided into training, testing, and validation datasets for model training.
+
+#### 6.3.3 Model Building for Saucer Dataset
+
+-   Similar to the pistons dataset, a Sequential Neural Network was built for the saucer dataset.
+-   The model was trained using the Adam optimizer and accuracy metrics.
+
+### 6.4 Testing on Video Feed
+
+-   The implemented models were tested on video feeds to detect and classify defects in real-time.
+-   The models correctly recognized and classified defects in saucers captured from video.
+
+### 6.5 Front-End Development
+
+-   The front-end of the web application was developed using HTML, CSS, and JavaScript, integrated with Flask.
+-   The application allowed users to interact with the model, either through a webcam for real-time defect detection or by uploading a demo video.
+
+### 6.6 Analytics and Insights
+
+-   Data from object detection, including object IDs and defect categories, were stored in MongoDB.
+-   The MongoDB database was integrated with the Flask framework to provide insights and analytics to users.
+-   Insights included the classification of saucers, the number of saucers detected over time, and graphical representations of the data.
+
+This project implemented defect detection and classification for various objects, enhancing quality control and providing valuable insights to users through a user-friendly web application.
+
